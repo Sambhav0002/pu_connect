@@ -1,0 +1,38 @@
+.hvr{
+    transition: 0.5s linear;
+
+}
+.hvr:hover{
+    transform: scale(1.1) ;
+}
+.btn-outline-yellow {
+    color: #ffc107; /* Bootstrap's warning/yellow color */
+    border-color: #ffc107;
+  }
+  .btn-outline-yellow:hover {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+  }
+  
+  /* Then update your HTML to use this class */
+  <li class="nav-item ms-lg-3">
+    <a class="nav-link btn btn-outline-yellow px-3" href="login.html">
+      <i class="bi bi-box-arrow-in-right me-1"></i>Login
+    </a>
+  </li>
+  .btn-outline-light {
+    color: #ffc107;
+    border-color: #ffc107;
+  }
+  .btn-outline-light:hover {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+  }
+  .hvr{
+    transition: 0.5s ease-in-out;
+  }
+  .hvr:hover{
+    transform: scale(1.1);
+  }

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn More | PU Connect - University Mentorship Platform</title>
+  <meta name="description" content="Discover how PU Connect revolutionizes peer mentorship in universities. Learn about our features, benefits, and how to get started.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <style>
+    .feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .step-number {
+      width: 40px;
+      height: 40px;
+      background-color: #0d6efd;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+    
+    .benefit-icon {
+      font-size: 2.5rem;
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+    
+    .testimonial-card {
+      border-left: 4px solid #0d6efd;
+    }
+    
+    .mentorship-process {
+      position: relative;
+      padding-left: 30px;
+    }
+    
+    .mentorship-process:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #0d6efd;
+    }
+    
+    .mentorship-step {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    
+    .mentorship-step:before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #0d6efd;
+      border: 2px solid white;
+    }
+    
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+    
+    .faq-question {
+      font-weight: 600;
+      color: #0d6efd;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html" aria-label="PU Connect Home">
+        <img src="assets/images/logo.png" alt="PU Connect Logo" width="40" height="40" class="d-inline-block align-top me-2">
+        PU Connect
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="learn-more.html">Learn More</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="nav-link btn btn-outline-light px-3" href="login.html">
+              <i class="bi bi-box-arrow-in-right me-1"></i>Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-primary text-white py-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold mb-4">Discover PU Connect</h1>
+          <p class="lead mb-4">Your complete guide to peer mentorship at our university</p>
+          <div class="d-flex gap-3">
+            <a href="#how-it-works" class="btn btn-light btn-lg px-4">How It Works</a>
+            <a href="#features" class="btn btn-outline-light btn-lg px-4">Features</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/images/learn.png" alt="Students learning together" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold mb-3">How PU Connect Works</h2>
+        <p class="lead text-muted">Three simple steps to start your mentorship journey</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body text-center p-4">
+              <div class="step-number mx-auto mb-4">1</div>
+              <h3 class="h5 fw-bold mb-3">Create Your Profile</h3>
+              <p>Sign up as a mentor or mentee in minutes. Highlight your skills, interests, and what you're looking for in a mentorship relationship.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body text-center p-4">
+              <div class="step-number mx-auto mb-4">2</div>
+              <h3 class="h5 fw-bold mb-3">Find Your Match</h3>
+              <p>Our smart matching system suggests ideal partners based on your goals, skills, and availability. Browse profiles and send connection requests.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body text-center p-4">
+              <div class="step-number mx-auto mb-4">3</div>
+              <h3 class="h5 fw-bold mb-3">Start Connecting</h3>
+              <p>Use our built-in messaging to schedule your first session. Track your progress and set goals together with your mentor/mentee.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold mb-3">Key Features</h2>
+        <p class="lead text-muted">What makes PU Connect special</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-people-fill benefit-icon"></i>
+              <h3 class="h5 fw-bold mb-3">Smart Matching</h3>
+              <p>Our algorithm considers your academic interests, skills, personality traits, and schedule to suggest the most compatible matches.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-calendar-check-fill benefit-icon"></i>
+              <h3 class="h5 fw-bold mb-3">Scheduling Tools</h3>
+              <p>Integrated calendar with availability indicators makes scheduling mentorship sessions effortless for both parties.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-chat-square-text-fill benefit-icon"></i>
+              <h3 class="h5 fw-bold mb-3">Secure Messaging</h3>
+              <p>Built-in messaging system keeps all communication in one place, with options for text, voice, and video calls.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-graph-up-arrow benefit-icon"></i>
+              <h3 class="h5 fw-bold mb-3">Progress Tracking</h3>
+              <p>Set goals, track milestones, and document your learning journey with our progress tracking tools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="display-6 fw-bold mb-4">Why Choose PU Connect?</h2>
+          <div class="mentorship-process">
+            <div class="mentorship-step">
+              <h3 class="h5 fw-bold">For Mentees</h3>
+              <ul>
+                <li>Gain personalized guidance from experienced peers</li>
+                <li>Accelerate your learning curve in challenging subjects</li>
+                <li>Build confidence through one-on-one support</li>
+                <li>Access insider knowledge about courses and career paths</li>
+              </ul>
+            </div>
+            
+            <div class="mentorship-step">
+              <h3 class="h5 fw-bold">For Mentors</h3>
+              <ul>
+                <li>Develop leadership and communication skills</li>
+                <li>Reinforce your own knowledge by teaching others</li>
+                <li>Build your professional network</li>
+                <li>Earn recognition for your contributions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold mb-4 text-center">Mentorship Impact</h3>
+              <div class="row text-center">
+                <div class="col-6 mb-4">
+                  <div class="display-5 fw-bold text-primary">85%</div>
+                  <p class="small">of mentees report improved academic performance</p>
+                </div>
+                <div class="col-6 mb-4">
+                  <div class="display-5 fw-bold text-primary">92%</div>
+                  <p class="small">of mentors develop valuable leadership skills</p>
+                </div>
+                <div class="col-6">
+                  <div class="display-5 fw-bold text-primary">78%</div>
+                  <p class="small">feel more connected to university community</p>
+                </div>
+                <div class="col-6">
+                  <div class="display-5 fw-bold text-primary">4.8/5</div>
+                  <p class="small">average satisfaction rating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold mb-3">What Our Community Says</h2>
+        <p class="lead text-muted">Hear from students who transformed their university experience</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm testimonial-card">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/images/testimonials/student1.jpg" alt="Priya K." class="rounded-circle me-3" width="60">
+                <div>
+                  <h4 class="h6 fw-bold mb-0">Priya K.</h4>
+                  <p class="small text-muted mb-0">Computer Science '25</p>
+                </div>
+              </div>
+              <p>"My mentor helped me navigate my CS degree and land an internship at Amazon. PU Connect changed my career trajectory!"</p>
+              <div class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm testimonial-card">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/images/testimonials/student2.jpg" alt="Marcus T." class="rounded-circle me-3" width="60">
+                <div>
+                  <h4 class="h6 fw-bold mb-0">Marcus T.</h4>
+                  <p class="small text-muted mb-0">Mechanical Engineering '24</p>
+                </div>
+              </div>
+              <p>"As a mentor, I've developed leadership skills while helping others. The platform makes it so easy to connect with eager learners."</p>
+              <div class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm testimonial-card">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/images/testimonials/student3.jpg" alt="Sophie L." class="rounded-circle me-3" width="60">
+                <div>
+                  <h4 class="h6 fw-bold mb-0">Sophie L.</h4>
+                  <p class="small text-muted mb-0">Visual Arts '26</p>
+                </div>
+              </div>
+              <p>"The photography mentorship helped me build a portfolio that got me my first freelance clients. Incredible resource!"</p>
+              <div class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="display-6 fw-bold mb-4 text-center">Frequently Asked Questions</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1">
+              <i class="bi bi-chevron-right me-2"></i> Who can join PU Connect?
+            </div>
+            <div id="faq1" class="collapse show">
+              <div class="p-3">
+                PU Connect is open to all currently enrolled university students. Faculty members can participate as advisors or moderators.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              <i class="bi bi-chevron-right me-2"></i> Is there a cost to use PU Connect?
+            </div>
+            <div id="faq2" class="collapse">
+              <div class="p-3">
+                No, PU Connect is completely free for all university students as part of our commitment to enhancing the student experience.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+              <i class="bi bi-chevron-right me-2"></i> How are mentors vetted?
+            </div>
+            <div id="faq3" class="collapse">
+              <div class="p-3">
+                All mentors must verify their student status and demonstrate expertise in their chosen mentorship areas through academic records or portfolio review.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+              <i class="bi bi-chevron-right me-2"></i> Can I be both a mentor and mentee?
+            </div>
+            <div id="faq4" class="collapse">
+              <div class="p-3">
+                Absolutely! Many students mentor in areas they're strong in while seeking mentorship in subjects they want to improve.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+              <i class="bi bi-chevron-right me-2"></i> How often should mentorship sessions occur?
+            </div>
+            <div id="faq5" class="collapse">
+              <div class="p-3">
+                This varies by pair, but we recommend meeting at least bi-weekly. The platform helps you schedule sessions that work for both parties.
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-4">
+            <a href="contact.html" class="btn btn-primary px-4">Still have questions? Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-primary text-white">
+    <div class="container text-center py-4">
+      <h2 class="display-6 fw-bold mb-4">Ready to Start Your Mentorship Journey?</h2>
+      <p class="lead mb-5 mx-auto" style="max-width: 600px;">
+        Join hundreds of students who are already benefiting from peer mentorship on PU Connect.
+      </p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="signup.html" class="btn btn-light btn-lg px-4">
+          <i class="bi bi-person-plus-fill me-2"></i>Sign Up Now
+        </a>
+        <a href="login.html" class="btn btn-outline-light btn-lg px-4">
+          <i class="bi bi-box-arrow-in-right me-2"></i>Login
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="assets/images/logo.png" alt="PU Connect Logo" width="180" class="mb-3">
+          <p class="mb-3">Empowering university students through peer mentorship and collaborative learning.</p>
+          <div class="social-links">
+            <a href="#" class="text-white me-3" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="text-white me-3" aria-label="Twitter"><i class="bi bi-twitter-x fs-5"></i></a>
+            <a href="#" class="text-white me-3" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-white" aria-label="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h4 class="h6 fw-bold mb-3">Quick Links</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="categories.html" class="text-white-50 text-decoration-none">Categories</a></li>
+            <li class="mb-2"><a href="index.html#events" class="text-white-50 text-decoration-none">Events</a></li>
+            <li><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h4 class="h6 fw-bold mb-3">Resources</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="faq.html" class="text-white-50 text-decoration-none">FAQs</a></li>
+            <li class="mb-2"><a href="blog.html" class="text-white-50 text-decoration-none">Blog</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4 col-md-4">
+          <h4 class="h6 fw-bold mb-3">Newsletter</h4>
+          <p class="small text-white-50 mb-3">Subscribe to receive updates on new mentors, events, and resources.</p>
+          <form class="mt-2">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email" aria-label="Email" required>
+              <button class="btn btn-primary" type="submit">
+                <i class="bi bi-envelope-arrow-up"></i>
+              </button>
+            </div>
+          </form>
+          <p class="small text-white-50 mb-0">
+            <i class="bi bi-telephone-fill me-2"></i>+91 9650972354<br>
+            <i class="bi bi-envelope-fill me-2"></i>contact@puconnect.edu
+          </p>
+        </div>
+      </div>
+      
+      <hr class="my-4 border-secondary">
+      
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small mb-3 mb-md-0">&copy; 2025 PU Connect. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="small mb-0">
+            <a href="privacy.html" class="text-white-50 text-decoration-none">Privacy Policy</a> | 
+            <a href="terms.html" class="text-white-50 text-decoration-none">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialize Bootstrap tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
